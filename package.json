@@ -1,0 +1,27 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "CleanBlog ap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhatpotur/Nodejs-CleanBlog.git"
+  },
+  "author": "Serhat POTUR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serhatpotur/Nodejs-CleanBlog/issues"
+  },
+  "homepage": "https://github.com/serhatpotur/Nodejs-CleanBlog#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
