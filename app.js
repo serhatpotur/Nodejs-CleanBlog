@@ -4,7 +4,7 @@ const blogController=require('./controllers/blogController')
 const ejs = require("ejs");
 var methodOverride = require("method-override");
 const app = express();
-const port = 3000;
+const port = process.env.port || 5000;
 
 //Middleware
 app.use(express.static("public"));
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(methodOverride("_method", { methods: ["POST", "GET"] }));
 
 // db Connect
-mongoose.connect("mongodb://127.0.0.1:27017/cleanblog-db", {
+mongoose.connect("mongodb+srv://serhat:Serhat159-+@cluster0.wuuh2.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }).then(() => {
